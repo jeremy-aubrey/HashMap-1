@@ -1,4 +1,4 @@
-#Intersection of Two Arrays
+# Intersection of Two Arrays
 <br>
 The intersection of two sets is a subset which contains the elements which are members
 of both of the given sets. The idea of using a HashMap is to improve effeciency as HashMaps
