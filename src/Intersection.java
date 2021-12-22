@@ -30,20 +30,16 @@ public class Intersection {
         //Arraylist to store the intersection
         ArrayList<Integer> intersection = new ArrayList<Integer>();
 
-        //Determine larger array and smaller array
-        int[] largerArr = arr1.length >= arr2.length ? arr1 : arr2;
-        int[] smallerArr = arr1 == largerArr ? arr2 : arr1;
-
         //Hashmap to store larger array values
         HashMap<Integer, Boolean> hashmap = new HashMap();
 
         //Store values from larger array in Hashmap
-        for (int i : largerArr) {
+        for (int i : arr1) {
             hashmap.put(i, true);
         }
 
         //Check values from second array against Hashmap
-        for (int j : smallerArr) {
+        for (int j : arr2) {
             //If Hashmap contains element add to intersection
             if (hashmap.containsKey(j)) {
                 intersection.add(j);
