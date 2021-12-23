@@ -30,17 +30,17 @@ public class Intersection {
         //Arraylist to store the intersection
         ArrayList<Integer> intersection = new ArrayList<Integer>();
 
-        //Hashmap to store larger array values
+        //Hashmap to store the elements of the first array
         HashMap<Integer, Boolean> hashmap = new HashMap();
 
-        //Store values from first array in Hashmap
+        //Store elements from first array in Hashmap as keys
         for (int i : arr1) {
             hashmap.put(i, true);
         }
 
-        //Check values from second array against Hashmap 
+        //Check elements from second array against Hashmap keys
         for (int j : arr2) {
-            //If Hashmap contains element add to intersection
+            //If Hashmap contains element (key) add to intersection
             if (hashmap.containsKey(j)) {
                 intersection.add(j);
             }
