@@ -3,7 +3,7 @@ import java.util.*;
 /*
 A function that returns the intersection of two arrays.
 The intersection is a third array that contains all the values
-contained in the first two arrays. The time complexity should be O(N).
+contained in the first two arrays. The time complexity is O(N).
 
 Author: Jeremy Aubrey
 Date: 12/22/2021
@@ -33,12 +33,12 @@ public class Intersection {
         //Hashmap to store larger array values
         HashMap<Integer, Boolean> hashmap = new HashMap();
 
-        //Store values from larger array in Hashmap
+        //Store values from first array in Hashmap
         for (int i : arr1) {
             hashmap.put(i, true);
         }
 
-        //Check values from second array against Hashmap
+        //Check values from second array against Hashmap 
         for (int j : arr2) {
             //If Hashmap contains element add to intersection
             if (hashmap.containsKey(j)) {
