@@ -10,7 +10,6 @@ int[] array2 = {0, 2, 4, 6, 8}
 The intersection of array1 and array2 would be: {2, 4}
 <br/><br/>
 A solution involving nested loops to compare each element in array1 to each element in array2 
-would have a time complexity of O(N²) while this solution using a HashMap reduces the 
-time complexity to O(N) where N is the sum of the lengths of the arrays to be compared
-(total number of elements). 
+would have a time complexity of O(N²) for arrays of equal length and O(N * M) for arrays of different
+lengths. This solution using a HashMap reduces the time complexity to O(N) where N is the sum of the lengths of the arrays to be compared (total number of elements). 
 
