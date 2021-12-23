@@ -2,7 +2,7 @@
 <br/>
 The intersection of two sets is a subset which contains the elements which are members
 of both of the given sets. The idea of using a HashMap is to improve effeciency as HashMaps
-can perform insertions and lookups in O(1) time (given the proper circumstances).
+can perform insertions and lookups in O(1) time (given a balanced distribution of data).
 <br/><br/>
 int[] array1 = {1, 2, 3, 4, 5}<br/>
 int[] array2 = {0, 2, 4, 6, 8}
